@@ -1,6 +1,8 @@
 <?php
+$arr = ['small string','biggest of the string', 'average string',];
 
-$arr = ['small string', 'biggest of the string', 'average string'];
+$content = maxstr($arr);
+
 function maxstr($a)
 {
     $max = [];
@@ -8,16 +10,15 @@ function maxstr($a)
         $max[] .= strlen($item);
         $c = max($max);
     }
+
     foreach ($a as $item) {
-        if (strlen($item) == $c)
-            return $item;
-        else continue;
+        if (strlen($item) == $c){
+            echo $item . "<br>";
+        }
     }
 }
 
-
-echo maxstr($arr);
-
+echo $content;
 
 
 
