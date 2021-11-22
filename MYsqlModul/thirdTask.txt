@@ -1,0 +1,1 @@
+select concat ("We have " ,  count(gender), case when gender = 'm' then ' boys!' when gender = 'f' then ' girls!' end) as "Gender information:" from student group by gender;

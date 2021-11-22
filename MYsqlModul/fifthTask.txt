@@ -1,0 +1,1 @@
+select title, count(word) as words from dicts d join words w on d.id = w.dict_id group by title;
